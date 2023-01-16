@@ -11299,6 +11299,12 @@ body {
   height: 100%;
 }
 
+html, body {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  overflow-y: auto !important;
+}
+
 .page-section {
   padding: 8rem 0;
 }
