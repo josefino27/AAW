@@ -6,3 +6,8 @@ nav div a{
   white-space: nowrap;
   overflow: hidden;
 }
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
+{
+  color: white;
+  background-color:#65c4eb;
+}

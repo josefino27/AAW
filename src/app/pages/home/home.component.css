@@ -1,19 +1,91 @@
-#home {
-  background-image: linear-gradient(to bottom, rgba(66, 69, 92, 0.8) 0%, rgba(66, 76, 92, 0.8) 100%),url(../../../assets/img/internet.webp) !important;
- background-repeat: no-repeat;
- background-position: center;
-}
-
-h1 {
+h2 {
   display: block;
+  font: bold 72px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: -1px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 120px;
-  text-align: center;
   text-shadow: /*relieve*/
   0 1px 0 rgb(200, 200, 200), 0 2px 0 rgb(190, 190, 190), 0 3px 0 rgb(180, 180, 180), 0 4px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180), 0 6px 0 rgb(190, 190, 190), /*sombra*/
   5px 7px 5px rgba(0, 0, 0, .40), 5px 12px 10px rgba(0, 0, 0, .30), 5px 17px 20px rgba(0, 0, 0, .20), 5px 22px 30px rgba(0, 0, 0, .10);
   color: white;
 
 }
+
+.hovertown {
+  transition: all 0.9s ease;
+}
+.hovertown:hover {
+  text-shadow: 0 0 72px black; 
+  color: transparent;      
+  transition: all 0.2s ease; 
+}
+header {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+p {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: "Courier New";
+  border-right: 0.15em solid #18bdec;
+  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+#producto {
+  min-height: 100vh;
+    position:relative;
+  }
+video{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+
+}
+
+
+.capa{
+
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  background: #1c1c1d;
+  opacity:0.5;
+  mix-blend-mode: overlay;
+}
+
+.alfa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  position: relative;
+  top:10rem;
+  z-index: 2;
+}
+
 
 
