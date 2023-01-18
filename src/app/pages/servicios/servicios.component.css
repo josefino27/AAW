@@ -9,8 +9,22 @@
 
 #boxes .box{
   float:left;
-  text-align: center;
   width:30%;
-  padding:10px;
+  padding-inline:10px;
 }
 
+.flex-container{
+  display:flex;
+  flex-direction: row;
+}
+
+@media(max-width: 600px){
+  .flex-container{
+    flex-direction: column;
+  }
+  #boxes .box{
+    float:left;
+    width:100%;
+    padding-inline:10px;
+  }
+}

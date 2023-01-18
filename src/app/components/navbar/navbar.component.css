@@ -3,8 +3,8 @@ nav {
 }
 
 #nav-icon img {
-position: fixed;
 margin-left: 2px;
+padding-inline: initial;
 
 }
 nav div a{
@@ -17,4 +17,5 @@ nav div a{
 {
   color: white;
   background-color:#65c4eb;
+  background-size: 2px;
 }

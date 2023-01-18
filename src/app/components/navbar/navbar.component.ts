@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+@ViewChild('navbarNavAltMarkup')navbarNavAltMarkupRef!: ElementRef;
+
+  constructor( private renderer2: Renderer2) { 
+
+    ;
+  }
 
   ngOnInit(): void {
   }
-
+  onclick() {
+    let element = this.navbarNavAltMarkupRef.nativeElement;
+    this.renderer2.removeClass(element,'show')
+}
 }

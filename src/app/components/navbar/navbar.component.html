@@ -1,21 +1,23 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
 
     <div class="container-fluid">
-  
-      <a class="navbar-brand display-5 text-primary mb-2"
-      routerLink='home'>
-      <div id="nav-icon" class="mt-2">
-        <img src="../../../assets/img/LogoEmpresa.jpg" height="32" width="100" start>
-        <span>
-          Compañía Colombiana de Organización Empresarial
-        </span>  
+      <a class="navbar-brand display-5 text-primary mb-2 row"
+      routerLink='home' (click)="onclick()">
+      <div id="nav-icon" class="col-sm-8">
+        <img src="../../../assets/img/LogoEmpresa.jpg" height="60" width="100" >
       </div>
-
         </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="text-white fw-bolder d-none d-md-block d-lg-block">
+            Compania Colombiana De Organizacion Empresarial Y Microfilmacion De Documentos Ltda
+          </div>
+          <div class="text-white fw-bolder d-md-none">
+            <h1>Archivar Ltda</h1>
+          </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" #navbarNavAltMarkup (click)="onclick()">
         <div class="navbar-nav">
           <a class="nav-link" routerLink='home' routerLinkActive="active">Home</a>
           <a class="nav-link" routerLink='nosotros' routerLinkActive="active">Nosotros</a>
