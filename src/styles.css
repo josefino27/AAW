@@ -85,7 +85,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -7676,6 +7676,10 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
 }
 
 .text-decoration-none {

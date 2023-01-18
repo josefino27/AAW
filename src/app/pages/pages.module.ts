@@ -9,6 +9,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from '../app-routing.module';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AppRoutingModule } from '../app-routing.module';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }
