@@ -1,17 +1,104 @@
 nav {
-  background-image: linear-gradient(to right, rgb(0 0 0 / 80%) 0%, #0d6efd 100%),url(/assets/img/LogoEmpresa.jpg) !important;
-  background-position: initial;
-  background-repeat: no-repeat;}
-
+  background-image: linear-gradient(to right, rgb(42 42 42 / 76%) 0%, #3a99f4 100%),url(/assets/img/LogoEmpresa.jpg) !important;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+nav div{
+  width: 100%;
+}
 nav div a{
   color: white !important;  
   position: relative;
   left: 10rem;
+  text-align: center;
+
 }
+
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
 {
   color: white;
-  background-color:#65c4eb;
+  background-color:#aee1f59f;
   background-size: 2px;
+}
+
+
+@media(max-width: 600px){
+
+  nav div a{
+
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+@media(max-width: 991px){
+
+  nav div a{
+
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+@media(max-width: 898px){
+
+  nav div a{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media(max-width: 840px){
+
+  nav div a{
+    white-space: break-spaces;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px){
+  
+  nav div a {white-space: break-spaces;
+  width: 65%;
+  text-align: center;
+  }
+}
+    
+@media (max-width: 584px){
+  
+  nav div a {white-space: break-spaces;
+  width: 60%;
+  text-align: center;
+  }
+}
+    @media (max-width: 548px){
+  
+  nav div a {white-space: break-spaces;
+  width: 55%;
+  text-align: center;
+  }
+}
+    @media (max-width: 484px){
+  
+  nav div a {white-space: break-spaces;
+  width: 50%;
+  text-align: center;
+  }
+}
+
+ @media (max-width: 414px){
+  
+  nav div a { white-space: break-spaces;
+    width: 40%;
+    text-align: center;
+    left: 8rem;
+  }
+}
+    
+    @media (max-width: 375px){
+  
+  nav div a {    white-space: break-spaces;
+    width: 40%;
+    text-align: center;
+    left: 8rem;
+  }
 }
