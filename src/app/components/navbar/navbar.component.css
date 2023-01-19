@@ -1,20 +1,28 @@
-nav {
-  background-image: linear-gradient(to right, rgb(42 42 42 / 76%) 0%, #3a99f4 100%),url(/assets/img/LogoEmpresa.jpg) !important;
+nav{
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 8%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
   background-position: left;
   background-repeat: no-repeat;
 }
+
 nav div{
   width: 100%;
 }
 nav div a{
-  color: white !important;  
+  color: white !important;
   position: relative;
   left: 10rem;
   text-align: center;
-
+  font-size: 1.8rem;
 }
-
-
+.fuente{
+  top: 0px;
+}
+.fuente h1{
+  font-size: 15px;
+}
+.fuente p{
+  font-size: 8px;
+}
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
 {
   color: white;
@@ -23,31 +31,112 @@ nav div a{
 }
 
 
-@media(max-width: 600px){
 
+@media(max-width: 1884px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
+
+    font-size: 01.2rem;
+    text-align: center;
+  }
+}
+
+@media(max-width: 1500px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 11%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
+
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media(max-width: 1382px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 13%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
+
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media(max-width: 1269px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 13%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   nav div a{
 
     font-size: 0.7rem;
     text-align: center;
   }
 }
-@media(max-width: 991px){
+@media(max-width: 1173px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
 
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+@media(max-width: 991px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   nav div a{
 
     font-size: 1.1rem;
     text-align: center;
   }
 }
-@media(max-width: 898px){
-
+@media(max-width: 912px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 17%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   nav div a{
     font-size: 1rem;
     text-align: center;
   }
 }
-@media(max-width: 840px){
-
+@media(max-width: 820px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
+    white-space: break-spaces;
+    width: 70%;
+    text-align: center;
+  }
+}
+@media(max-width: 768px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   nav div a{
     white-space: break-spaces;
     width: 70%;
@@ -56,29 +145,48 @@ nav div a{
 }
 
 @media (max-width: 650px){
-  
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   nav div a {white-space: break-spaces;
   width: 65%;
   text-align: center;
   }
 }
-    
+
 @media (max-width: 584px){
-  
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   nav div a {white-space: break-spaces;
   width: 60%;
   text-align: center;
   }
 }
-    @media (max-width: 548px){
-  
+    @media (max-width: 540px){
+      nav{
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 28%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+        background-position: left;
+        background-repeat: no-repeat;
+      }
   nav div a {white-space: break-spaces;
   width: 55%;
   text-align: center;
   }
+  nav div a p{
+    font-size: 6px;
+  }
 }
     @media (max-width: 484px){
-  
+      nav{
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+        background-position: left;
+        background-repeat: no-repeat;
+      }
   nav div a {white-space: break-spaces;
   width: 50%;
   text-align: center;
@@ -86,19 +194,49 @@ nav div a{
 }
 
  @media (max-width: 414px){
-  
-  nav div a { white-space: break-spaces;
-    width: 40%;
-    text-align: center;
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 37%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{ text-align: center;
     left: 8rem;
+    top: 17px;
+
+  }
+  nav div a p{ text-align: center;
+    font-size: 4px;
   }
 }
-    
+
     @media (max-width: 375px){
-  
-  nav div a {    white-space: break-spaces;
-    width: 40%;
-    text-align: center;
-    left: 8rem;
+      nav{
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 37%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+        background-position: left;
+        background-repeat: no-repeat;
+      }
+      nav div a {
+        text-align: center;
+        left: 8rem;
+        top: 17px;
+      }
+  nav div a p{
+
+    font-size: 4px;
+  }
+}
+    @media (max-width: 280px){
+      nav{
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, #3a99f4 0%, #3a99f4 100%),url('/assets/img/LogoEmpresa.jpg') !important;
+        background-position: left;
+        background-repeat: no-repeat;
+      }
+      nav div a {
+        left: 10px;
+        top: 0px;
+        width: 100%;
+      }
+  nav div a p{
+    font-size: 5px;
   }
 }
