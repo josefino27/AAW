@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nosotros',
   templateUrl: './nosotros.component.html',
   styleUrls: ['./nosotros.component.css']
 })
-export class NosotrosComponent implements OnInit {
+export class NosotrosComponent implements OnInit{
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    document.body.scrollTo({
+      top:0, left:0, behavior: 'smooth'
+    });
   }
+
 
 }

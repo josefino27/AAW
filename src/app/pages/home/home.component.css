@@ -69,8 +69,8 @@ video{
   justify-content: center;
   align-items: center;
   margin:auto;
-  position: relative;
-  top:10rem;
+  position: absolute;
+  width: 100%;
   z-index: 2;
 }
 

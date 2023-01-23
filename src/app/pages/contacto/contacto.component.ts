@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
@@ -11,9 +11,10 @@ export class ContactoComponent implements OnInit {
 
   contactForm :  FormGroup;
   mensajeForm : string = "Completa el Formulario";
+  color: string = "primary";
   constructor( private http: HttpClient ) {
     this.contactForm = new FormGroup({
-      asunto: new FormControl('',Validators.required),
+      subject: new FormControl('',Validators.required),
       name : new FormControl('',Validators.required),
       email : new FormControl('',[Validators.required,Validators.email]),
       message : new FormControl('', Validators.required),
@@ -23,7 +24,9 @@ export class ContactoComponent implements OnInit {
    }
 
   ngOnInit() {
-
+    document.body.scrollTo({
+      top:0, left:0, behavior: 'smooth'
+    });
   }
 
 
@@ -34,11 +37,13 @@ onSubmit(){
           next: (response) => console.log(response),
           error: (error) => console.log(error),
         });
-    this.mensajeForm = "correo enviado exitosamente.";
+    this.color="success";
+    this.mensajeForm = "Correo enviado exitosamente.";
     this.contactForm.reset();
 
   }else{
-    this.mensajeForm = "*completa todos los campos porfavor";
+    this.color="danger";
+    this.mensajeForm = "*Completa todos los campos por favor";
     return;
   }
 
