@@ -1,7 +1,8 @@
 nav{
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 8%, #001ac8 0%, #001ac8  100%),url('/assets/img/LogoEmpresa.jpg') !important;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;
   background-position: left;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 
 nav div{
@@ -9,7 +10,8 @@ nav div{
   padding-right: 0em;
 }
 nav div a{
-  color: white !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
   position: relative;
   left: 10rem;
   text-align: center;
@@ -31,17 +33,74 @@ nav div a{
 }
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
 {
-  color: white;
+
   background-color:#aee1f59f;
   background-size: 2px;
 }
+@media(max-width: 3120px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
 
+    font-size: 01.2rem;
+    text-align: center;
+  }
+  nav div a p{
 
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+@media(max-width: 2876px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a p{
+
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+@media( max-width: 2352px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
+
+    font-size: 01.2rem;
+    text-align: center;
+  }
+  nav div a p{
+
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+@media(max-width: 2052px){
+  nav{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
+    background-repeat: no-repeat;
+  }
+  nav div a{
+
+    font-size: 01.2rem;
+    text-align: center;
+  }
+  nav div a p{
+
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
 
 @media(max-width: 1884px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac8  0%, #001ac8  100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
     background-repeat: no-repeat;
   }
   nav div a{
@@ -53,8 +112,7 @@ nav div a{
 
 @media(max-width: 1500px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 11%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
     background-repeat: no-repeat;
   }
   nav div a{
@@ -66,9 +124,7 @@ nav div a{
 
 @media(max-width: 1382px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 13%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-repeat: no-repeat;
   }
   nav div a{
 
@@ -82,9 +138,7 @@ nav div a{
 
 @media(max-width: 1173px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 14%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-repeat: no-repeat;
   }
   nav div a{
     font-size: 0.7em;
@@ -98,8 +152,7 @@ nav div a{
 }
 @media(max-width: 1090px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 16%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
     background-repeat: no-repeat;
   }
   nav div a{
@@ -115,8 +168,7 @@ nav div a{
 
 @media(max-width: 950px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 17%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
     background-repeat: no-repeat;
   }
   nav div a{
@@ -128,8 +180,7 @@ nav div a{
 }
 @media(max-width: 820px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 28%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
     background-repeat: no-repeat;
   }
   nav div{
@@ -154,8 +205,7 @@ nav div a{
 }
 @media (max-width: 640px){
 nav{
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 33%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-        background-position: left;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;        background-position: left;
         background-repeat: no-repeat;
       }
   nav div a {
@@ -187,8 +237,7 @@ nav{
 
  @media (max-width: 414px){
   nav{
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 37%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-    background-position: left;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;    background-position: left;
     background-repeat: no-repeat;
   }
   nav div a{ text-align: center;
@@ -203,8 +252,7 @@ nav{
 
     @media (max-width: 375px){
       nav{
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 38%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-        background-position: left;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;        background-position: left;
         background-repeat: no-repeat;
       }
       nav div a {
@@ -218,8 +266,7 @@ nav{
 }
     @media (max-width: 280px){
       nav{
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, #001ac8 0%, #001ac8 100%),url('/assets/img/LogoEmpresa.jpg') !important;
-        background-position: left;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, #001ac800 0%, #001ac800 100%),url(/assets/img/LogoEmpresa.jpg) !important;        background-position: left;
         background-repeat: no-repeat;
       }
       nav div a {

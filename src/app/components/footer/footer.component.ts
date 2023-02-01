@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  cel: string = "3155062636";
   constructor() { }
 
   ngOnInit(): void {
